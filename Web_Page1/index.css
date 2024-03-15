@@ -37,13 +37,11 @@
 nav {
     width: 100%;
     height: 100px;
-    /* background-color: azure; */
     border-bottom: 1px black solid;
 }
 
 #drop_article1 {
-    /* background-color: aqua; */
-    width: 15%;
+    width: 30%;
     height: 100%;
     float: left;
 }
@@ -58,21 +56,20 @@ nav {
 }
 
 #mid_article1 {
-    /* background-color: bisque; */
-    width: 55%;
+    width: 40%;
     height: 100%;
     float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
 
 #mid_article1>h1 {
     position: relative;
-    top: -10px;
-    left: 320px;
     font-size: 35px;
 }
 
 #corner_article1 {
-    /* background-color: aqua; */
     width: 30%;
     height: 100%;
     float: left;
@@ -98,8 +95,7 @@ main {
 
 aside {
     width: 20%;
-    height: 100%;
-    /* background-color: bisque; */
+    height: 250px;
     float: left;
     display: flex;
     justify-content: center;
@@ -110,14 +106,13 @@ aside {
 aside>div {
     width: 70%;
     height: 80%;
-    /* background-color: lightgrey; */
     background-image: linear-gradient(to top right, rgb(88, 85, 85) , lightgray);
+    cursor: pointer;
 }
 
 .port {
     width: 80%;
-    height: 100%;
-    /* background-color: burlywood; */
+    height: 250px;
     float: left;
     border-bottom: 1px lightgray solid;
 }
@@ -129,9 +124,21 @@ aside>div {
 .port>button{
     width: 150px;
     height: 30px;
-    margin-top: 40px;
+    margin-top: 30px;
     background-color:rgb(255, 47, 6);
     color: white;
     text-align: center;
     border: 2px  white outset;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+  aside{
+    width: 40%;
+    height: 350px;
+  }
+  .port{
+    width: 60%;
+    height: 350px;
+  }
 }
