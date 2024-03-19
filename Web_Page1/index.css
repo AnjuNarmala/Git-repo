@@ -141,6 +141,13 @@ aside>div {
     width: 60%;
     height: 350px;
   }  
+  #corner_article1>button{
+    left: 2px;
+    top: -10px;
+  }
+  #mid_article1>h1{
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 673px){
